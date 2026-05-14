@@ -1,0 +1,169 @@
+/* ========================
+   ADMIN PAGE CONTAINER
+======================== */
+.admin-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* ========================
+   MAIN CARD
+======================== */
+.manage-card {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.manage-card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ========================
+   MESSAGE
+======================== */
+.admin-message {
+  text-align: center;
+  padding: 8px;
+  font-weight: 600;
+  color: green;
+}
+
+/* ========================
+   BUTTONS
+======================== */
+.manage-card button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.manage-card button:hover {
+  background: #125aa3;
+}
+
+/* ========================
+   ADD PLAYER FORM
+======================== */
+.admin-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.admin-form input,
+.admin-form select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.admin-form button {
+  grid-column: span 2;
+  margin-top: 10px;
+  background: #2e7d32;
+}
+
+.admin-form button:hover {
+  background: #1b5e20;
+}
+
+/* ========================
+   TEAM FILTER
+======================== */
+.team-filter {
+  width: 250px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+/* ========================
+   PLAYER GRID (IMPORTANT)
+   ✅ 4 CARDS PER ROW
+======================== */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ========================
+   PLAYER CARD
+======================== */
+.history-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-3px);
+}
+
+.history-card h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.history-card p {
+  font-size: 13px;
+  margin: 4px 0;
+  color: #555;
+}
+
+.history-card button {
+  width: 100%;
+  background: #d32f2f;
+}
+
+.history-card button:hover {
+  background: #a50000;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 1024px) {
+  .player-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form button {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .player-grid {
+    grid-template-columns: 1fr;
+  }
+}

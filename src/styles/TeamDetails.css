@@ -1,0 +1,155 @@
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("../assets/bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+/* PAGE */
+.team-page{
+min-height:90vh;
+padding:20px 20px;     /* reduced */
+padding-top:25px;  
+color:white;
+}
+
+
+/* MAIN TWO-COLUMN LAYOUT */
+.wiki-layout{
+display:grid;
+grid-template-columns:68% 28%;
+gap:35px;
+
+max-width:1400px;
+margin:auto;
+align-items:start;
+}
+
+
+/* LEFT CONTENT */
+.team-left{
+display:block;
+width:100%;
+}
+
+.team-left h1{
+font-size:42px;
+font-weight:700;
+margin-bottom:16px;
+line-height:1.1;
+}
+
+.description{
+display:block;
+max-width:850px;
+font-size:16px;
+line-height:1.7;
+margin-bottom:22px;
+}
+
+.team-left h2{
+font-size:28px;
+margin-bottom:14px;
+}
+
+
+/* SQUAD TABLE */
+.squad-table{
+width:100%;
+max-width:900px;
+border-collapse:collapse;
+
+background:rgba(0,0,0,.22);
+backdrop-filter:blur(4px);
+}
+
+.squad-table th{
+background:#11bfd4;
+color:#000;
+padding:12px;
+font-size:16px;
+font-weight:700;
+}
+
+.squad-table td{
+padding:11px;
+font-size:15px;
+border:1px solid rgba(255,255,255,.18);
+color:white;
+}
+
+.squad-table tr:hover{
+background:rgba(255,255,255,.06);
+}
+
+
+/* RIGHT INFOBOX */
+.team-right{
+width:100%;
+max-width:350px;   /* reduced from 360 */
+
+background:#f2f2f2;
+color:#111;
+
+padding:18px;      /* reduced from 25 */
+border-radius:8px;
+
+margin-top:85px;
+box-shadow:0 4px 14px rgba(0,0,0,.25);
+}
+
+.team-logo{
+width:200px;
+display:block;
+margin:auto auto 16px;
+}
+
+.team-right h3{
+text-align:center;
+font-size:17px;
+margin-bottom:12px;
+}
+
+.team-right table{
+width:100%;
+border-collapse:collapse;
+}
+
+.team-right td{
+padding:14px 8px;
+border-bottom:1px solid #ddd;
+font-size:18px;
+color:#111;
+}
+
+.team-right td:first-child{
+font-weight:700;
+width:42%;
+}
+
+
+/* remove old player cards */
+.player-row{
+display:none;
+}
+
+
+/* MOBILE */
+@media(max-width:1000px){
+
+.wiki-layout{
+grid-template-columns:1fr;
+}
+
+.team-right{
+margin-top:30px;
+max-width:100%;
+}
+
+}

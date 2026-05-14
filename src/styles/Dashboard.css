@@ -1,0 +1,102 @@
+.dashboard-page{
+max-width:750px;
+margin-left:35px;  /* gap from sidebar */
+}
+
+/* Title */
+.dashboard-title{
+font-size:40px;
+font-weight:800;
+color:white;
+margin-bottom:24px;
+text-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+
+/* refresh button */
+.refresh-btn{
+padding:12px 22px;
+border:none;
+border-radius:12px;
+
+background:linear-gradient(
+90deg,
+#06b6d4,
+#2563eb
+);
+
+color:white;
+font-weight:700;
+cursor:pointer;
+
+margin-bottom:24px;
+}
+
+
+/* big transparent wrapper */
+.dashboard-panel{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(14px);
+max-width:760px;
+border:1px solid rgba(255,255,255,.18);
+
+border-radius:22px;
+padding:22px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+
+/* 3 boxes */
+.dashboard-cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+
+.stat-card{
+background:rgba(255,255,255,.16);
+backdrop-filter:blur(8px);
+
+border-radius:18px;
+padding:18px;
+min-height:145px;
+text-align:center;
+transition:.3s;
+}
+
+.stat-card:hover{
+transform:translateY(-4px);
+}
+
+
+.stat-card h3{
+color:white;
+font-size:18px;
+margin-bottom:14px;
+}
+
+
+.stat-number{
+font-size:32px;
+font-weight:800;
+color:#38bdf8;
+}
+
+
+.live-dot{
+margin-top:8px;
+font-weight:700;
+color:#ef4444;
+}
+
+
+/* mobile */
+@media(max-width:900px){
+
+.dashboard-cards{
+grid-template-columns:1fr;
+}
+
+}

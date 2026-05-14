@@ -1,0 +1,85 @@
+body{
+margin:0;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("../assets/bg.jpg");
+background-size:cover;
+font-family:Poppins,sans-serif;
+}
+
+.summary-container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:50px 30px;
+color:white;
+}
+
+.summary-container h2{
+font-size:42px;
+margin-bottom:25px;
+}
+
+.summary-container h3{
+margin-top:40px;
+font-size:30px;
+}
+
+.score-table,
+.player-table{
+margin:30px 0;
+background:rgba(20,30,50,.88);   /* was too transparent */
+border-radius:20px;
+overflow:hidden;
+backdrop-filter:blur(6px);
+}
+
+.table-head,
+.table-row{
+display:grid;
+padding:18px 24px;
+align-items:center;
+}
+
+.table-head{
+background:rgba(255, 253, 253, 0.14);
+font-weight:700;
+}
+
+.table-row{
+border-top:1px solid rgba(255, 255, 255, 0.08);
+}
+
+.score-table .table-head,
+.score-table .table-row{
+grid-template-columns:2fr 1fr 1fr;
+}
+
+.batting{
+grid-template-columns:2fr 1.3fr .8fr .8fr 1fr;
+}
+
+.bowl{
+grid-template-columns:2fr 1fr 1fr 1fr;
+}
+
+.winner-box{
+display:inline-block;
+padding:18px 30px;
+background:linear-gradient(90deg,#ff9800,#ffca28);
+color:#111;
+font-weight:700;
+border-radius:35px;
+margin-top:20px;
+}
+
+button{
+margin-top:35px;
+margin-right:15px;
+padding:12px 28px;
+background:#00bcd4;
+border:none;
+border-radius:8px;
+color:white;
+font-weight:bold;
+}

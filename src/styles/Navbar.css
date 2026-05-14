@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 30px;
+  background: #0d1b2a;
+  color: white;
+}
+
+.nav-left h2 {
+  cursor: pointer;
+}
+
+.nav-center span {
+  margin: 0 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-center span:hover {
+  color: #90caf9;
+}
+
+.nav-right {
+  position: relative;
+}
+
+.profile {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: center;
+  right: 0;
+  top: 40px;
+
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  width: 150px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown span {
+  color: red;
+  cursor: pointer;
+}
+
+.dropdown span:hover {
+  text-decoration: underline;
+}

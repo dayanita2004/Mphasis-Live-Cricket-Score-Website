@@ -1,0 +1,121 @@
+.points-page{
+min-height:100vh;
+padding:60px 20px;
+display:flex;
+justify-content:center;
+}
+
+
+.points-table-wrapper{
+width:100%;
+max-width:980px;
+
+background:rgba(15,23,42,.38);
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.14);
+border-radius:28px;
+
+padding:40px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.25);
+}
+
+
+/* header */
+.points-header{
+display:flex;
+align-items:center;
+gap:18px;
+margin-bottom:30px;
+}
+
+.points-icon{
+width:58px;
+height:58px;
+border-radius:18px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:28px;
+color:#ffd700;
+
+background:linear-gradient(
+135deg,
+#1d4ed8,
+#06b6d4
+);
+}
+
+.points-header h2{
+color:white;
+font-size:42px;
+margin:0;
+}
+
+.points-header p{
+color:#cbd5e1;
+margin-top:4px;
+}
+
+
+/* table */
+.points-table{
+width:100%;
+border-collapse:collapse;
+overflow:hidden;
+border-radius:18px;
+background:white;
+}
+
+.points-table thead{
+background:#02184d;
+color:white;
+}
+
+.points-table th{
+padding:18px;
+font-size:18px;
+}
+
+.points-table td{
+padding:16px;
+text-align:center;
+border-bottom:1px solid #dbe3ee;
+font-size:17px;
+}
+
+.points-table tbody tr:hover{
+background:#f4f8ff;
+}
+
+
+/* team cell */
+.team{
+font-weight:700;
+display:flex;
+align-items:center;
+gap:14px;
+justify-content:center;
+}
+
+.rank{
+background:#0e2a61;
+color:white;
+width:30px;
+height:30px;
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:14px;
+}
+
+.pts{
+font-weight:800;
+color:#2563eb;
+}

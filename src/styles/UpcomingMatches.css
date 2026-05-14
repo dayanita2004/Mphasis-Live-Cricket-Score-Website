@@ -1,0 +1,165 @@
+/* ======================================================
+   🌟 UPCOMING MATCHES PAGE WRAPPER
+====================================================== */
+
+.upcoming-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* ======================================================
+   ✅ PAGE HEADER (TITLE + DASHBOARD BUTTON)
+====================================================== */
+
+.upcoming-header {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 16px;
+
+  position: relative; /* anchor for button */
+}
+
+/* Page title */
+.upcoming-header h2 {
+  font-size: 22px;
+  color: #111827;
+  margin: 0;
+}
+
+/* Small dashboard button (top-right) */
+.dashboard-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  background: #374151;
+  color: #ffffff;
+
+  width: auto;
+  white-space: nowrap;
+}
+
+.dashboard-btn:hover {
+  background: #111827;
+}
+
+/* ======================================================
+   📦 UPCOMING MATCH CARD
+====================================================== */
+
+.upcoming-card {
+  width: 100%;
+  max-width: 900px;
+
+  background: #ffffff;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+  position: relative;
+  animation: fadeUp 0.3s ease;
+}
+
+/* Match title */
+.upcoming-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+/* Match info */
+.upcoming-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* ======================================================
+   🎯 BUTTON ROW
+====================================================== */
+
+.btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+/* Start match */
+.start-match-btn {
+  padding: 8px 16px;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+
+  transition: background-color 0.2s ease;
+}
+
+.start-match-btn:hover {
+  background-color: #21867a;
+}
+
+.start-match-btn:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* Delete match */
+.delete-match-btn {
+  padding: 8px 16px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+
+  transition: background-color 0.2s ease;
+}
+
+.delete-match-btn:hover {
+  background-color: #c92a2a;
+}
+
+/* ======================================================
+   ❌ EMPTY STATE
+====================================================== */
+
+.no-upcoming {
+  font-size: 15px;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+/* ======================================================
+   🎞️ ANIMATION
+====================================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
